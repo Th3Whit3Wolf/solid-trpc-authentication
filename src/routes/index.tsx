@@ -16,6 +16,7 @@ export default function Home() {
     if (!auth.data) return;
     try {
       await logout.mutateAsync();
+      await auth.refetch();
       toast.success("Logged out successfully", TOAST_CONFIG);
       navigate("/auth/login");
     } catch (e) {
