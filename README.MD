@@ -1,3 +1,8 @@
+## Preview
+
+![Preview](https://user-images.githubusercontent.com/91349014/198830652-7008c1c2-0745-46e7-b7ee-6ed38dc30610.mp4)
+[![Watch the video](https://user-images.githubusercontent.com/91349014/198830724-1585477c-524f-49d6-8af2-3cdb4307ec06.png)](https://user-images.githubusercontent.com/91349014/198830652-7008c1c2-0745-46e7-b7ee-6ed38dc30610.mp4)
+
 # Create JD App
 
 This project was created using [Create JD App](https://github.com/OrJDev/create-jd-app)
