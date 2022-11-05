@@ -9,11 +9,11 @@ import { trpc } from "~/utils/trpc";
 
 export default function Home() {
   const context = trpc.useContext();
-  const logout = trpc.user.logout.useMutation({
+  const logout = trpc.user.logout.useMutation(() => ({
     onSuccess: async () => {
       await context.user.me.invalidate();
     },
-  });
+  }));
   const navigate = useNavigate();
   const auth = useAuth();
 
