@@ -13,11 +13,11 @@ const Login: ParentComponent<ILoginProps> = ({}) => {
   const [password, setPassword] = createSignal("");
   const context = trpc.useContext();
   const navigate = useNavigate();
-  const login = trpc.user.login.useMutation(() => ({
+  const login = trpc.user.login.useMutation({
     onSuccess: async () => {
       await context.user.me.invalidate();
     },
-  }));
+  });
 
   const onHandleLogin = async () => {
     if (validateScheme(loginScheme, { email: email(), password: password() })) {
